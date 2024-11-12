@@ -24,12 +24,12 @@ The idea of hacking hour is resolving small challenges to the first experience w
   - [Clarity language](https://book.clarity-lang.org/title-page.html)
   - [Clarinet](https://docs.hiro.so/stacks/clarinet)
 
-![Clarinet](../doc/images/Clarinet.avif)
+![Clarinet](../assets/images/Clarinet.avif)
 
 - **Stacks Blockchain API**
   - [Stacks API by Hiro](https://docs.hiro.so/stacks)
 
-![StacksAPIbyHiro](../doc/images/Stacks_API_by_Hiro.avif)
+![StacksAPIbyHiro](../assets/images/Stacks_API_by_Hiro.avif)
 
 - **Stacks JS**
   - [Stacks.js](https://docs.hiro.so/stacks/stacks.js)
@@ -37,7 +37,7 @@ The idea of hacking hour is resolving small challenges to the first experience w
 - **sBTC**
   - [sBTC Docs](https://stacks-network.github.io/sbtc-docs/introduction.html)
 
-![Stacks.js](../doc/images/stacks_js.avif)
+![Stacks.js](../assets/images/stacks_js.avif)
 
 ## Challenges by tools
 
