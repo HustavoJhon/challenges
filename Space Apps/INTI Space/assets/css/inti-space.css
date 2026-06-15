@@ -1,0 +1,175 @@
+:root {
+  --inti-primary: #0a84ff;
+  --inti-accent: #00d4aa;
+  --inti-earth: #4ade80;
+  --inti-sky: #38bdf8;
+  --inti-warm: #f97316;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0b132b 0%, #1c2541 50%, #0f3460 100%);
+  padding: 80px 0;
+  border-radius: 23px;
+  margin-bottom: 30px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+.hero-section .subtitle {
+  color: var(--inti-sky);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.sdg-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(10, 132, 255, 0.15);
+  color: var(--inti-sky);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.sdg-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--inti-primary);
+  transform: translateY(-2px);
+}
+
+.edu-card h5 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.edu-card p {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.edu-card .icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.resource-item:last-child {
+  border-bottom: none;
+}
+
+.resource-item .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(10, 132, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  flex-shrink: 0;
+}
+
+.team-card {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.team-card .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 3px solid var(--inti-primary);
+}
+
+.tag-nasa {
+  background: linear-gradient(135deg, #0b3d91, #1a6bff);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.page-content-wrapper {
+  min-height: calc(100vh - 200px);
+}
+
+.content-image {
+  border-radius: 23px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.section-divider {
+  border-color: rgba(255, 255, 255, 0.08);
+  margin: 40px 0;
+}
+
+.banner-overlay {
+  position: relative;
+  border-radius: 23px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.banner-overlay img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.banner-overlay .overlay-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 40px 30px 30px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.85));
+}
+
+.banner-overlay .overlay-text h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.banner-overlay .overlay-text p {
+  color: #ccc;
+  font-size: 0.95rem;
+  margin: 0;
+}

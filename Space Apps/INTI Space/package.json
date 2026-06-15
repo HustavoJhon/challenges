@@ -1,0 +1,15 @@
+{
+  "name": "inti-space",
+  "version": "2.0.0",
+  "private": true,
+  "description": "INTI Space — NASA Space Apps Challenge 2024",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-pages.mjs",
+    "dev": "npm run build && npx serve dist",
+    "preview": "npx serve dist"
+  },
+  "dependencies": {
+    "serve": "^14.2.6"
+  }
+}
