@@ -1,13 +1,18 @@
-;; (define-public (get-balance (address principal))
-  (let ((balance (contract-call? .stacks-token get-balance (as-contract address))))
-    (if (is-none balance)
-      (err "Account not found")
-      (ok (unwrap! balance)))))
-
-;; (d
-  (address principal)
-  (list (tuple (tx-id uint) (amount uint) (timestamp uint))))
+(define-map transactions
+  { addr: principal }
+  (list 100 { tx-id: uint, amount: uint, timestamp: uint })
+)
 
 (define-public (record-transaction (addr principal) (tx-id uint) (amount uint))
-  (map-set transactions addr (list (tuple (tx-id tx-id) (amount amount) (timestamp (block-height)))))
-  (ok "Transaction recorded"))
+  (begin
+    (map-set transactions
+      { addr: addr }
+      (list { tx-id: tx-id, amount: amount, timestamp: block-height })
+    )
+    (ok "Transaction recorded")
+  )
+)
+
+(define-read-only (get-transactions (addr principal))
+  (map-get? transactions { addr: addr })
+)
